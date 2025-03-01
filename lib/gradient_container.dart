@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/styled_text.dart';
 
+var alignmentTop = Alignment.topLeft;
+var alignmentBottom =
+    Alignment.bottomRight;
+
 //creating custom widget.*custom widget nothing but a bunch of widgets
 //that are grouped together to create a new widget.
+
 class GradientContainer
     extends StatelessWidget {
   const GradientContainer({super.key});
   @override
   Widget build(context) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
+          begin: alignmentTop,
+          end: alignmentBottom,
           colors: [
             Color.fromARGB(
               255,

@@ -6,7 +6,7 @@ class StyledText
   const StyledText({super.key});
   @override
   Widget build(context) {
-    return Text(
+    return const Text(
       'Welcome',
       style: TextStyle(
         color: Colors.white,
